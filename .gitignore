@@ -1,0 +1,8 @@
+# Ignore the files and directories created by python3 venv
+bin/
+lib/
+lib64/
+share/
+include/
+pyvenv.cfg
+
