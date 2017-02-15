@@ -17,3 +17,7 @@ def signup():
 def signin():
     return render_template("signin.html")
 
+@app.route('/main') # if user is logged on load the editor
+def load_profile():
+    return render_template("main.html")
+
