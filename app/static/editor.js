@@ -2,15 +2,29 @@
 // This is the code that loads the editor. Using Ace instead of Codemirror
 
 
-function init() {
-      //// Initialize Firebase.
-      var config = {
-          apiKey: "AIzaSyAcGzXdxjWp7AuQySWpqF0ZA7dewKheo7s",
-          authDomain: "andelapair.firebaseapp.com",
-          databaseURL: "https://andelapair.firebaseio.com",
-      };
-      firebase.initializeApp(config);
 
+      //// Initialize Firebase.
+var config = {
+      apiKey: "AIzaSyAcGzXdxjWp7AuQySWpqF0ZA7dewKheo7s",
+      authDomain: "andelapair.firebaseapp.com",
+      databaseURL: "https://andelapair.firebaseio.com",
+      messagingSenderId: "513770463795"
+};
+
+firebase.initializeApp(config);
+function init() {
+
+    
+    firebase.auth().onAuthStateChanged(function (user) {
+    
+        if (!user){
+            console.log('User is not logged');
+            return window.location.href = "/signin";
+        }
+        else{
+            console.log('User is logged in', user);
+        }
+    });
       //// Get Firebase Database reference.
       var firepadRef = getExampleRef();
 
