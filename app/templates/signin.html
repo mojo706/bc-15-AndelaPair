@@ -2,23 +2,19 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Sample FirebaseUI App</title>
-    <!-- *******************************************************************************************
-       * TODO(DEVELOPER): Paste the initialization snippet from:
-       * Firebase Console > Overview > Add Firebase to your web app. *
-       ***************************************************************************************** -->
-       <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAcGzXdxjWp7AuQySWpqF0ZA7dewKheo7s",
-    authDomain: "andelapair.firebaseapp.com",
-    databaseURL: "https://andelapair.firebaseio.com",
-    storageBucket: "andelapair.appspot.com",
-    messagingSenderId: "513770463795"
-  };
-  firebase.initializeApp(config);
-</script>
+    <title>AndelaPair | SignIn</title>
+    <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAcGzXdxjWp7AuQySWpqF0ZA7dewKheo7s",
+        authDomain: "andelapair.firebaseapp.com",
+        databaseURL: "https://andelapair.firebaseio.com",
+        storageBucket: "andelapair.appspot.com",
+        messagingSenderId: "513770463795"
+      };
+      firebase.initializeApp(config);
+    </script>
     <script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
     <script type="text/javascript">
@@ -27,13 +23,8 @@
         signInSuccessUrl: 'http://138.68.149.84:8080/main',
         signInOptions: [
           // Leave the lines as is for the providers you want to offer your users.
-          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-          firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-          firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-          firebase.auth.GithubAuthProvider.PROVIDER_ID,
-          firebase.auth.EmailAuthProvider.PROVIDER_ID
+          firebase.auth.GoogleAuthProvider.PROVIDER_ID
         ]
-        
       };
 
       // Initialize the FirebaseUI Widget using Firebase.
@@ -43,9 +34,7 @@
     </script>
   </head>
   <body>
-    <!-- The surrounding HTML is left untouched by FirebaseUI.
-         Your app may use that space for branding, controls and other customizations.-->
-    <h1>Welcome to My Awesome App</h1>
+    <h1> Please Sing In/Signup </h1>
     <div id="firebaseui-auth-container"></div>
   </body>
 </html>
