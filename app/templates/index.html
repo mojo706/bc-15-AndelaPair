@@ -3,11 +3,29 @@
 {% extends "base.html" %}
 {% block title %}Home | AndelaPair{% endblock %}
 {% block body %}
-<!-- Huge SignUP! button -->
-<div class="jumbotron">
-    <h1>AndelaPair!</h1>
-    <p class="lead"></p>
-    <p><a class="btn btn-lg btn-success" href="showSignUp" role="button">Sign up today</a>
-    </p>
-</div>
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">AndelaPair</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="/">Home</a></li>
+                  <li><a href="/signin">Sign In!</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">AndelaPair</h1>
+            <p class="lead">Ever Wished you could share your screen while explaining a problem to a client or a friend. Well Andela Pair Is HERE!</p>
+            <p class="lead">
+              <a href="/signin" class="btn btn-lg btn-default">Sign UP!</a>
+            </p>
+          </div>
 {% endblock %}

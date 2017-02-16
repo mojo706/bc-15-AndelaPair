@@ -32,7 +32,7 @@ function init() {
       var editor = ace.edit("firepad-container");
       editor.setTheme("ace/theme/monokai");
       var session = editor.getSession();
-      session.setUseWrapMode(true);
+      session.setUseWrapMode(false);
       session.setUseWorker(false);
       session.setMode("ace/mode/python");
 
