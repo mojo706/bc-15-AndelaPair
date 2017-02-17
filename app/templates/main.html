@@ -19,6 +19,7 @@
 
   <!-- Firepad -->
   <link rel="stylesheet" href="https://cdn.firebase.com/libs/firepad/1.4.0/firepad.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   <script src="https://cdn.firebase.com/libs/firepad/1.4.0/firepad.min.js"></script>
   <script src="../static/editor.js"></script>
   <script src="../static/firepad-userlist.js"></script>
@@ -28,12 +29,17 @@
   <style>
     html { height: 100%; }
     body { margin: 0; height: 100%; position: relative; }
+    .firepad{ height: 100vh; }
   </style>
 </head>
 
-<body onload="init()">  
-      <div id="firepad-container"></div>
-  <div id="firechat-wrapper"></div>
+<body onload="init()"> 
+  <div class="container-fluid"> 
+    <div id="firepad-container" class="col-md-8 pull-left">
+      <div id="firechat-wrapper" class="col-md-4 pull-right"></div>
+    </div>
+  </div>
   <script src="../static/my_chat.js"></script>
 </body> 
 </html>
+
