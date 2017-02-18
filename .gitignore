@@ -9,3 +9,8 @@ pyvenv.cfg
 ../__pycache__/
 __pycache__/
 pip-selfcheck.json
+app/__init__.pyc
+app/views.pyc
+config.pyc
+
+
